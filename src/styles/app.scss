@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
 
+
+
+
+//navigation desktop//
 *,
 *::before,
 *::after {
@@ -10,19 +14,17 @@
 }
 
 body {
-  font-family: 'Saira Extra Condensed', sans-serif;
+  font-family: 'Poppins';
+  font-style: normal;
   letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
 }
 
-
- 
-
 header {
   text-align: center;
   padding: 0.5rem 0 5rem;
-  font-size: 1.25rem;
+  font-size:20px;
 }
 
 ul {
@@ -41,7 +43,7 @@ a {
   margin: 0 1.5rem;
   color: rgb(17, 1, 1);
   text-decoration: none;
-  text-transform: uppercase;
+  
   
   &::after {
     content: '';
@@ -65,14 +67,77 @@ a {
   }
   
 }
+//div 1--> titre//
+.svg-container {
+ 
+  background-image: url('assets/images/illu1.svg');
+ 
+}
 
-
-
-
-
-
-
-
+h1{
+  position: absolute;
+  width: 297px;
+  height: 62px;
+  left: 46px;
+  top: 143px;
   
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 74px;
+  
+  color: #000000;
+}
+
+h2{
+  position: absolute;
+width: 280px;
+height: 85px;
+left: 48px;
+top: 237px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 42px;
+
+color: #000000;
+}
+//section intro//
+
+
+
+.fond{
+position: absolute;
+width: 390px;
+height: 507px;
+left: 0px;
+top: 432px;
+
+background: rgba(255, 150, 165, 0.13);
+border-radius: 8px;
+
+}
+/* Introduction */
+
+h3{
+position: absolute;
+width: 197px;
+height: 48px;
+left: 24px;
+top: 464px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+color: #000000;
+}
+ 
+
   
   
