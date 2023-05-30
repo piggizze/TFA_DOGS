@@ -1,7 +1,7 @@
 
 @import 'section-one';
 
-@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 
@@ -70,8 +70,13 @@ a {
 //div 1--> titre//
 .svg-container {
  
-  background-image: url('assets/images/illu1.svg');
- 
+  background-image: url('../assets/images/illu1.svg');
+  position: absolute;
+  width: 276px;
+  height: 289px;
+  left: 57px;
+  top: 111px;
+  
 }
 
 h1{
@@ -106,9 +111,6 @@ line-height: 42px;
 color: #000000;
 }
 //section intro//
-
-
-
 .fond{
 position: absolute;
 width: 390px;
@@ -123,21 +125,170 @@ border-radius: 8px;
 /* Introduction */
 
 h3{
+  position: absolute;
+  width: 197px;
+  height: 48px;
+  left: 24px;
+  top: 464px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height */
+  
+  
+  color: #000000;
+}
+ 
+.svg-container2 {
+  background-image: url(../assets/images/illu2.svg);
 position: absolute;
-width: 197px;
-height: 48px;
+width: 366px;
+height: 458.53px;
 left: 24px;
-top: 464px;
+top: 448px;
+
+  
+}  
+
+h4{
+  position: absolute;
+  width: 332px;
+  height: 178px;
+  left: 24px;
+  top: 536px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  
+  color: #000000;
+  
+}
+
+p{
+  position: absolute;
+  width: 332px;
+  height: 144px;
+  left: 24px;
+  top: 738px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  
+  color: #000000;
+}
+//section 2 adn//
+
+.h3{
+  position: absolute;
+  width: 279px;
+  height: 39px;
+  left: 24px;
+  top: 971px;
+  
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+
+}
+
+.h4{
+  position: absolute;
+width: 332px;
+height: 108px;
+left: 24px;
+top: 1088px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+
+color: #000000;
+}
+.p{
+  position: absolute;
+width: 332px;
+height: 216px;
+left: 24px;
+top: 1264px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.svg-container3{
+  background-image: url(../assets/images/illu3.svg);
+  position: absolute;
+width: 1102px;
+height: 1084.18px;
+left: 0px;
+top: 768px;
+background-repeat: no-repeat;
+}
+
+// une rencontre section//
+
+.h3_2{
+  position: absolute;
+width: 323px;
+height: 96px;
+left: 24px;
+top: 1528px;
 
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 32px;
 line-height: 48px;
-/* identical to box height */
+
+color: #000000;
+
+}
+
+.h4_2{
+  position: absolute;
+width: 332px;
+height: 170px;
+left: 24px;
+top: 1644px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+
 color: #000000;
 }
- 
+.p_2{
+  position: absolute;
+width: 332px;
+height: 144px;
+left: 24px;
+top: 1896px;
 
-  
-  
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
