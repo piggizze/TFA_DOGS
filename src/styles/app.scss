@@ -3,7 +3,58 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+//burger menu//
 
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav.active {
+  left: 0;
+}
+
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
 
 
 //navigation desktop//
@@ -125,7 +176,7 @@ border-radius: 8px;
 /* Introduction */
 
 h3{
-  position: absolute;
+  position:absolute;
   width: 197px;
   height: 48px;
   left: 24px;
@@ -312,6 +363,9 @@ line-height: 24px;
 
 color: #000000;
 }
+
+//pop up//
+
 //sectionn probleme//
 
 .fond2{
@@ -621,13 +675,20 @@ top: 4076px;
 
 background: rgba(169, 0, 23, 0.2);
 }
-
-
-
-@media (min-width:769px) {
+@media (min-width: 850px){
 
 }
-@media (min-width: 1280px){
+@media (max-width: 750px){
+  .nav_desk{
+    display: none;
+  }
+}
+
+@media (min-width: 750px){
+  
+  #openBtn{
+    display: none;
+  }
   .svg-container{
     position: absolute;
 width: 500px;
@@ -678,10 +739,12 @@ background: rgba(255, 150, 165, 0.13);
 border-radius: 8px;
   }
   .svg-container2{
+    background-image: url(../assets/images/illu9.svg);
     position: absolute;
-    left: 1100px;
-    right: 0px;
-    top: 850px;
+    width: 694.85px;
+    height: 869.37px;
+    left: 752.17px;
+    top: 540.5px;
   }
   h3{
     position: absolute;
@@ -852,12 +915,13 @@ left: 0px;
 top: 2942px;
   }
   .svg-container4{
+    background-image: url(../assets/images/illu10.svg);
     position: absolute;
-width: 554.8px;
-height: 328.47px;
-left: 884px;
-top: 3063px;
-
+    width: 925px;
+    height: 629.35px;
+    left: 679px;
+    top: 2762px;
+    
 opacity: 0.3;
   }
   .h3_3{
@@ -915,11 +979,20 @@ font-size: 47px;
 line-height: 74px;
   }
   .svg-container5{
+    background-image:url(../assets/images/illu11.svg);
     position: absolute;
-width: 454px;
-height: 684px;
-left: 986px;
-top: 3490px;
+    width: 454px;
+    height: 684px;
+    left: 986px;
+    top: 3490px;
+  }
+  .svg-container6{
+    background-image: url(../assets/images/illu12.svg);
+    position: absolute;
+    width: 454px;
+    height: 684px;
+    left: 0px;
+    top: 4364px;
   }
   .h4_3{
     
@@ -1060,11 +1133,12 @@ font-size: 28px;
 line-height: 42px;
   }
   .svg-container7{
+    background-image: url(../assets/images/illu13.svg);
     position: absolute;
-width: 494px;
-height: 488px;
-left: 946px;
-top: 4918px;
+    width: 494px;
+    height: 488px;
+    left: 946px;
+    top: 4980px;
   }
   .fond_footer{
     position: absolute;
