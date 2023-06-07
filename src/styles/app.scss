@@ -12,7 +12,7 @@
   z-index: 1;
   top: 0;
   left: -250px;
-  background-color: #e8e8e8;
+  background-color: #f9abb5;
   padding-top: 60px;
   transition: left 0.5s ease;
 }
@@ -28,7 +28,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: black;
   display: block;
   transition: 0.3s;
 }
@@ -63,6 +63,14 @@
 *::after {
   box-sizing: border-box;
 }
+.nav_desk{
+  position: fixed;
+  text-align: center;
+  left: 220px;
+  z-index: 1;
+  background-color: #F293A582;
+  border-radius: 16px;
+}
 
 body {
   font-family: 'Poppins';
@@ -73,9 +81,10 @@ body {
 }
 
 header {
-  text-align: center;
+
   padding: 0.5rem 0 5rem;
   font-size:20px;
+  
 }
 
 ul {
@@ -117,6 +126,16 @@ a {
     
   }
   
+}
+.logo-svg{
+  background-image:url(../assets/images/logo.svg);
+  position: absolute;
+width: 78px;
+height: 78px;
+right: 32px;
+top: 32px;
+background-repeat: no-repeat;
+
 }
 //div 1--> titre//
 .svg-container {
@@ -344,25 +363,7 @@ line-height: 24px;
 
 color: #000000;
 }
-.btn{
-  position: absolute;
-width: 175px;
-height: 30px;
-left: 24px;
-top: 2104px;
 
-background: rgba(169, 0, 23, 0.2);
-border-radius: 16px;
-
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-
-color: #000000;
-}
 
 //pop up//
 
@@ -420,24 +421,7 @@ line-height: 24px;
 
 color: #000000;
 }
-.btn_2{
-  position: absolute;
-  width: 200px;
-  height: 30px;
-  left: 23px;
-  top: 2464px;
-  
-  background: rgba(169, 0, 23, 0.2);
-  border-radius: 16px;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-
-color: #000000;
-}
 
 //section solution//
 
@@ -489,23 +473,7 @@ color: #000000;
   color: #000000;
 }
 
-.btn_3{
-  position: absolute;
-  width: 130px;
-  height: 30px;
-  left: 24px;
-  top: 3104px;
-  
-  background: rgba(49, 168, 71, 0.2);
-  border-radius: 16px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #000000;
 
-}
 .svg-container5{
   background-image: url(../assets/images/illu5.svg);
   position: absolute;
@@ -539,8 +507,6 @@ font-style: normal;
 font-weight: 500;
 font-size: 29px;
 line-height: 48px;
-
-
 color: #000000;
 }
 .h4_4{
@@ -572,24 +538,6 @@ font-size: 16px;
 line-height: 24px;
 
 color: #000000;
-}
-
-.btn_4{
-  position: absolute;
-  width: 152.78px;
-  height: 30px;
-  left: 24px;
-  top: 3526px;
-  
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-
-color: #000000;
-background: rgba(169, 0, 23, 0.2);
-border-radius: 16px;
 }
 
 .svg-container6{
@@ -634,23 +582,7 @@ background-repeat: no-repeat;
   color: #000000;
 }
 
-.btn_5{
-  position: absolute;
-width: 117px;
-height: 30px;
-left: 24px;
-top: 3900px;
 
-background: rgba(49, 168, 71, 0.2);
-border-radius: 16px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
- 
-  color: #000000;
-}
 
 .svg-container7{
   background-image: url(../assets/images/illu7.svg);
@@ -675,6 +607,34 @@ top: 4076px;
 
 background: rgba(169, 0, 23, 0.2);
 }
+//pop up//
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+
 @media (min-width: 850px){
 
 }
@@ -685,6 +645,9 @@ background: rgba(169, 0, 23, 0.2);
 }
 
 @media (min-width: 750px){
+  .logo-svg{
+    left: 32px;
+  }
   
   #openBtn{
     display: none;
@@ -890,23 +853,6 @@ line-height: 36px;
 
 color: #000000;
   }
-  .btn{
-    position: absolute;
-width: 297px;
-height: 58px;
-left: 784px;
-top: 2816px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 42px;
-/* identical to box height */
-
-
-color: #000000;
-  }
-  //section probleme//
   .fond2{
     position: absolute;
 width: 100%;
@@ -953,18 +899,7 @@ line-height: 36px;
 
 color: #000000;
   }
-  .btn_2{
-    position: absolute;
-width: 353px;
-height: 58px;
-left: 71px;
-top: 3333px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 42px;
-  }
+
   .h3_4{
     position: absolute;
 width: 478px;
@@ -1023,18 +958,8 @@ font-weight: 400;
 font-size: 24px;
 line-height: 36px;
   }
-  .btn_3{
-    position: absolute;
-width: 258px;
-height: 58px;
-left: 72px;
-top: 4196px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 42px;
-  }
+ 
+
   .fond3{
     position: absolute;
 width: 100%;
@@ -1081,18 +1006,7 @@ font-weight: 400;
 font-size: 24px;
 line-height: 36px;
   }
-  .btn_4{
-    position: absolute;
-width: 292px;
-height: 58px;
-left: 782px;
-top: 4804px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 42px;
-  }
+
   //elaboration//
 .h3_6{
   position: absolute;
@@ -1120,18 +1034,6 @@ font-weight: 400;
 font-size: 24px;
 line-height: 36px;
   }
-  .btn_5{
-    position: absolute;
-width: 189px;
-height: 58px;
-left: 72px;
-top: 5280px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 42px;
-  }
   .svg-container7{
     background-image: url(../assets/images/illu13.svg);
     position: absolute;
@@ -1150,4 +1052,3 @@ line-height: 42px;
   height: 133px;
   background: rgba(169, 0, 23, 0.2);
   }
-}

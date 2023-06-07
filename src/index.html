@@ -22,26 +22,26 @@
         <a id="closeBtn" href="#" class="close">&times;</a>
         <ul>
           <li>
-            <a href=".h3_2">Rencontre</a>
+            <a href="#rencontre">Rencontre</a>
           </li>
   
           <li>
-            <a href="#">Problème</a>
+            <a href="#probleme">Problème</a>
           </li>
   
           <li>
-            <a href="#">Solution</a>
+            <a href="#solution">Solution</a>
           </li>
   
           <li>
-            <a href="#">Modules</a>
+            <a href="#modules">Modules</a>
           </li>
           <li>
-            <a href="#">Elaborations</a>
+            <a href="#elaboration">Elaboration</a>
           </li>
           <li>
-            <a href="#">Présentation
-
+            <a href="#presentation">Présentation
+  
             </a>
           </li>
         </ul>
@@ -58,34 +58,36 @@
       <div class="nav_desk">
       <ul>
         <li>
-          <a href=".h3_2">Rencontre</a>
+          <a href="#rencontre">Rencontre</a>
         </li>
 
         <li>
-          <a href="#">Problème</a>
+          <a href="#probleme">Problème</a>
         </li>
 
         <li>
-          <a href="#">Solution</a>
+          <a href="#solution">Solution</a>
         </li>
 
         <li>
-          <a href="#">Modules</a>
+          <a href="#modules">Modules</a>
         </li>
         <li>
-          <a href="#">Elaborations</a>
+          <a href="#elaboration">Elaborations</a>
         </li>
         <li>
-          <a href="#">Présentation
+          <a href="#presentation">Présentation
 
           </a>
         </li>
       </ul>
     </div>
      </nav>
+     <div class="logo-svg" ></div>
     </header>
     
   </div>
+  
   <div class="grid-container">
   <div class="svg-container"></div>
   <div>
@@ -116,7 +118,7 @@
         </div>
 
         <div>
-          <h3 class="h3_2">
+          <h3 class="h3_2" id="rencontre">
             Une rencontre pour en savoir plus
           </h3>
               <h4 class="h4_2">
@@ -125,13 +127,22 @@
                   <p class="p_2">
                     Lors de cette rencontre avec le responsable, j'ai pu découvrir l'organisation du refuge, les missions qu'ils mènent, en apprendre davantage sur l'abandon et la maltraitance des chiens, ainsi que sur l'avenir de l'ASBL.
                   </p>
-                      <button class="btn">Plus d’information</button>
-               
+                     
+                  <button id="openButton">Ouvrir la fenêtre</button>
+
+                  <div id="popup" class="popup">
+                    <div class="popup-content">
+                      <h6>Contenu de la fenêtre pop-up</h6>
+                      <p class="p_7">Ceci est un exemple de contenu à afficher dans la fenêtre pop-up.</p>
+                      <button id="closeButton">Fermer</button>
+                    </div>
+                  </div>
+                  
         </div>
 
     <div class="fond2"></div>
         <div class="svg-container4"></div>
-            <h3 class="h3_3">
+            <h3 class="h3_3" id="probleme">
               Un problème mais lequel ?
             </h3>
                   <p class="p_3">
@@ -140,7 +151,7 @@
                   <button class="btn_2">Direction le problème</button>
 
     <div>
-        <h3 class="h3_4">
+        <h3 class="h3_4" id="solution">
           Place à la solution!
         </h3>
             <h4 class="h4_3">
@@ -159,7 +170,7 @@
 
     <div>
       <div class="fond3"></div>
-          <h3 class="h3_5">
+          <h3 class="h3_5" id="modules">
             Les modules
           </h3>
               <h4 class="h4_4">
@@ -176,7 +187,7 @@
     </div>
 
     <div>
-          <h3 class="h3_6">
+          <h3 class="h3_6" id="elaboration">
             L’élaboration 
 du projet
           </h3>
