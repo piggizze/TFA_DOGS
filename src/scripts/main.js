@@ -30,3 +30,26 @@ closeButton.addEventListener('click', () => {
 });
 
 
+//slider//
+const slider = document.querySelector('.slider');
+const sliderContent = document.querySelector('.slider-content');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const slides = document.querySelectorAll('.slide');
+
+let currentIndex = 0;
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlider();
+});
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  updateSlider();
+});
+
+function updateSlider() {
+  const slideWidth = slides[0].offsetWidth;
+  sliderContent.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
