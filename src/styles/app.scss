@@ -605,6 +605,7 @@ height: 96px;
 top: 4076px;
 
 
+
 background: rgba(169, 0, 23, 0.2);
 }
 //pop up//
@@ -633,7 +634,22 @@ background: rgba(169, 0, 23, 0.2);
 .popup-content p {
   margin-bottom: 20px;
 }
-
+#openButton{
+  position: absolute;
+  width: 175px;
+  height: 30px;
+  left: 780px;
+  top: 2812px;
+  z-index: 1;
+  background: rgba(169, 0, 23, 0.2);
+  border-radius: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
 
 @media (min-width: 850px){
 
@@ -1051,4 +1067,18 @@ line-height: 36px;
   width: 100%;
   height: 133px;
   background: rgba(169, 0, 23, 0.2);
+}
+  .lien{
+    position: absolute;
+width: 364px;
+height: 37px;
+left: 72px;
+top: 6256px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 36px;
+  }
   }
