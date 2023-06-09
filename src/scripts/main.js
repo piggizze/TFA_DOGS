@@ -78,4 +78,16 @@ openButton5.addEventListener('click', () => {
 closeButton5.addEventListener('click', () => {
   popup5.style.display = 'none';
 });
+//pop up credits
+const openButton6 = document.getElementById('openButton6');
+const popup6 = document.getElementById('popup6');
+const closeButton6 = document.getElementById('closeButton6');
+
+openButton6.addEventListener('click', () => {
+  popup6.style.display = 'block';
+});
+
+closeButton6.addEventListener('click', () => {
+  popup6.style.display = 'none';
+});
 //slider//
