@@ -29,27 +29,53 @@ closeButton.addEventListener('click', () => {
   popup.style.display = 'none';
 });
 
+//pop 2/:
 
+const openButton2 = document.getElementById('openButton2');
+const popup2 = document.getElementById('popup2');
+const closeButton2 = document.getElementById('closeButton2');
+
+openButton2.addEventListener('click', () => {
+  popup2.style.display = 'block';
+});
+
+closeButton2.addEventListener('click', () => {
+  popup2.style.display = 'none';
+});
+//pop up 3//
+const openButton3 = document.getElementById('openButton3');
+const popup3 = document.getElementById('popup3');
+const closeButton3 = document.getElementById('closeButton3');
+
+openButton3.addEventListener('click', () => {
+  popup3.style.display = 'block';
+});
+
+closeButton3.addEventListener('click', () => {
+  popup3.style.display = 'none';
+});
+///pop up 4//
+const openButton4 = document.getElementById('openButton4');
+const popup4 = document.getElementById('popup4');
+const closeButton4 = document.getElementById('closeButton4');
+
+openButton4.addEventListener('click', () => {
+  popup4.style.display = 'block';
+});
+
+closeButton4.addEventListener('click', () => {
+  popup4.style.display = 'none';
+});
+///pop up 5///
+const openButton5 = document.getElementById('openButton5');
+const popup5 = document.getElementById('popup5');
+const closeButton5 = document.getElementById('closeButton5');
+
+openButton5.addEventListener('click', () => {
+  popup5.style.display = 'block';
+});
+
+closeButton5.addEventListener('click', () => {
+  popup5.style.display = 'none';
+});
 //slider//
-const slider = document.querySelector('.slider');
-const sliderContent = document.querySelector('.slider-content');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-const slides = document.querySelectorAll('.slide');
-
-let currentIndex = 0;
-
-nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateSlider();
-});
-
-prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  updateSlider();
-});
-
-function updateSlider() {
-  const slideWidth = slides[0].offsetWidth;
-  sliderContent.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-}

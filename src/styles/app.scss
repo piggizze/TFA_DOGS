@@ -21,6 +21,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  z-index: 1;
 }
 
 
@@ -31,6 +32,7 @@
   color: black;
   display: block;
   transition: 0.3s;
+  z-index: 1;
 }
 
 .sidenav a:hover {
@@ -39,6 +41,7 @@
 
 .sidenav.active {
   left: 0;
+  z-index: 1;
 }
 
 .sidenav .close {
@@ -46,6 +49,7 @@
   top: 0;
   right: 25px;
   font-size: 36px;
+  z-index: 1;
 }
 
 .burger-icon span {
@@ -54,6 +58,7 @@
   height: 5px;
   background-color: black;
   margin: 6px 0;
+  z-index: 1;
 }
 
 
@@ -602,7 +607,7 @@ background-repeat: no-repeat;
  right: 0%;
 width: 100%;
 height: 96px;
-top: 4076px;
+top: 4472px;
 
 
 
@@ -632,27 +637,10 @@ background: rgba(169, 0, 23, 0.2);
   font-size: 24px;
 }
 
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px;
-  background-color: #ddd;
-  border: none;
-  cursor: pointer;
-}
-
-.prev-button {
-  left: 10px;
-}
-
-.next-button {
-  right: 10px;
-}
 
 //pop up//
 .popup {
+  
   display: none;
   position: fixed;
   top: 0;
@@ -662,13 +650,14 @@ background: rgba(169, 0, 23, 0.2);
   background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
   z-index: 9999;
 }
-
 .popup-content {
   background-color: #fff;
-  width: 900px;
-  height: 600px;
+  width: 350px;
+  height: 500px;
   padding: 20px;
   margin: 50px auto;
+  overflow: auto;
+  background-image: url(../assets/images/illupop.svg);
 }
 
 .popup-content h2 {
@@ -678,12 +667,78 @@ background: rgba(169, 0, 23, 0.2);
 .popup-content p {
   margin-bottom: 20px;
 }
+//////////button pop up design////////////////////////////////= 
+/// footer mobile = dwt logo = 
+/// page credits 
+/// =video
+/// publier le site 
+/// design interieur pop up food svg
+/// 
 #openButton{
+  cursor: pointer;
   position: absolute;
   width: 175px;
   height: 30px;
-  left: 780px;
-  top: 2812px;
+  left: 24px;
+  top: 2104px;
+  z-index: 1;
+  background: rgba(169, 0, 23, 0.2);
+  border-radius: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000; 
+}
+#closeButton{
+  z-index: 9999;
+  background: rgba(169, 0, 23, 0.2);
+  border-radius: 16px;
+  cursor: pointer;
+
+}
+#closeButton2{
+  z-index: 9999;
+  background: rgba(169, 0, 23, 0.2);
+  border-radius: 16px;
+  cursor: pointer;
+
+}
+#closeButton3{
+  z-index: 9999;
+  background: rgba(169, 0, 23, 0.2);
+  border-radius: 16px;
+  cursor: pointer;
+
+}
+#closeButton4{
+  z-index: 9999;
+  background: rgba(169, 0, 23, 0.2);
+  border-radius: 16px;
+  cursor: pointer;
+
+}
+#closeButton5{
+  z-index: 9999;
+  background: rgba(169, 0, 23, 0.2);
+  border-radius: 16px;
+  cursor: pointer;
+
+}
+#closebutton:hover{
+  background-color:#f67687 ;
+}
+#openButton:hover{
+  background-color: #f67687;
+}
+#openButton2{
+  cursor: pointer;
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 24px;
+  top: 2464px;
   z-index: 1;
   background: rgba(169, 0, 23, 0.2);
   border-radius: 16px;
@@ -694,6 +749,70 @@ background: rgba(169, 0, 23, 0.2);
   line-height: 24px;
   color: #000000;
 }
+#openButton2:hover{
+  background-color: #f67687;
+}
+#openButton3{
+  cursor: pointer;
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  left: 24px;
+  top: 3104px;
+  z-index: 1;
+  background: rgba(169, 0, 23, 0.2);
+  border-radius: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+#openButton3:hover{
+  background-color: #f67687;
+}
+#openButton4{
+  cursor: pointer;
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  left: 24px;
+  top: 3524px;
+  z-index: 1;
+  background: rgba(169, 0, 23, 0.2);
+  border-radius: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+#openButton4:hover{
+  background-color: #f67687;
+}
+#openButton5{
+  cursor: pointer;
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  left: 24px;
+  top: 3896px;
+  z-index: 1;
+  background: rgba(169, 0, 23, 0.2);
+  border-radius: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+#openButton5:hover{
+  background-color: #f67687;
+}
+
 .site{
   top: 6088px;
 
@@ -704,16 +823,138 @@ background: rgba(169, 0, 23, 0.2);
 .credits{
   top: 6088px;
 }
+#presentation{
+  position: absolute;
+  top: 3940px;
+}
+.para{
+  position: absolute;
+  top: 4072px;
+  width: 332px;
+  height: 153px;
+  left: 24px;
+  
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.svg-container8{
+  position: absolute;
+width: 196px;
+height: 113px;
+left: 227px;
+top: 4250px;
+background-image: url(../assets/images/illu14.svg);
+}
 @media (min-width: 850px){
 
 }
 @media (max-width: 750px){
+
   .nav_desk{
     display: none;
   }
 }
 
 @media (min-width: 750px){
+  h6{
+    width: 650px;
+
+    font-size: 16px;
+  }
+  h5{
+    font-size: 32px;
+  }
+  .popup-content {
+    background-color: #fff;
+    width: 900px;
+    height: 600px;
+    padding: 20px;
+    margin: 50px auto;
+  }
+  #openButton{
+    position: absolute;
+    width: 175px;
+    height: 30px;
+    left: 788px;
+    top: 2832px;
+    z-index: 1;
+    background: rgba(169, 0, 23, 0.2);
+    border-radius: 16px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  #openButton2{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 72px;
+    top: 3352px;
+    z-index: 1;
+    background: rgba(169, 0, 23, 0.2);
+    border-radius: 16px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  #openButton3{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 72px;
+    top: 4208px;
+    z-index: 1;
+    background: rgba(169, 0, 23, 0.2);
+    border-radius: 16px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  #openButton4{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 788px;
+    top: 4804px;
+    z-index: 1;
+    background: rgba(169, 0, 23, 0.2);
+    border-radius: 16px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  #openButton5{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 72px;
+    top: 5280px;
+    z-index: 1;
+    background: rgba(169, 0, 23, 0.2);
+    border-radius: 16px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
   .logo-svg{
     left: 32px;
   }
@@ -822,6 +1063,32 @@ font-size: 24px;
 line-height: 36px;
 
 color: #000000;
+  }
+  #presentation{
+    position: absolute;
+    width: 302px;
+    height: 74px;
+    left: 788px;
+    top: 5472px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 49px;
+    line-height: 74px;
+  }
+  .para{
+    position: absolute;
+    width: 586px;
+    height: 144px;
+    left: 788px;
+    top: 5656px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
   }
   .h3{
     position: absolute;
@@ -1111,6 +1378,7 @@ line-height: 36px;
     left: 946px;
     top: 4980px;
   }
+
   .fond_footer{
     position: absolute;
     bottom: 0px;
